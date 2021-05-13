@@ -127,7 +127,7 @@ SUPPORT_USERS = list(SUPPORT_USERS)
 
 
 # Load at end to ensure all prev variables have been set
-from msg_types.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler
+from extraction.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler
 
 # make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler
