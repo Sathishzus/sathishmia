@@ -1,0 +1,79 @@
+{
+  "name": "MIAKHALIFA",
+  "description": "Group Managing Bot For Telegram",
+  "logo": "https://telegra.ph/file/49c073d5ad982935488ba.jpg",
+  "keywords": [
+    "telegram",
+    "best",
+    "group",
+    "manager",
+    "3"
+  ],
+  "repository": "https://github.com/Sathishzus/sathishmia",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable env variables",
+      "value": "ANYTHING"
+    },
+    "TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": "1838913644:AAFkjcWcmDhnwArzaWbhHsYhveZKxEodd4g"
+    },
+    "OWNER_ID": {
+      "description": "Go to any And Type /id to get your id",
+      "value": "1480007084"
+    },
+    "OWNER_USERNAME": {
+      "description": "Your username",
+      "value": "sathish2004"
+    },
+    "MESSAGE_DUMP": {
+      "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
+      "value": "-1001163802881"
+    },
+    "SUDO_USERS": {
+      "description": "A space separated list of user_ids which should be considered sudo users",
+      "value": "1480007084"
+    },
+    "SUPPORT_USERS": {
+      "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
+      "value": "1480007084"
+    },
+    "WHITELIST_USERS": {
+      "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
+      "value": "1480007084"
+    },
+    "SUPPORT_LINK": {
+      "description": "Optional: link where you would like to receive donations.",
+      "value": "https://t.me/sathish2004"
+    },
+    "PORT": {
+      "description": "Port to use for your webhooks",
+      "value": "5000"
+    },
+    "DEL_CMDS": {
+      "description": "Whether to delete commands from users which don't have rights to use that command",
+      "value": "False"
+    },
+    "STRICT_GBAN": {
+      "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+      "value": "True"
+    },
+    "ALLOW_EXCL": {
+      "description": "Whether to allow using exclamation marks ! for commands as well as /.",
+      "value": "True"
+    },
+    "BAN_STICKER": {
+      "description": "Which sticker to use when banning people. Use https://telegram.dog/ShowJsonBot to get the file_id",
+      "value": "AgACAgUAAxkBAAEFcrdfFf8V9wezMCPmNVHhHRLmKjCzngACTaoxG-A8cFSRkRwx7oAOf00CH2t0AAMBAAMCAAN4AAMzxgMAARoE"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ]
+}
